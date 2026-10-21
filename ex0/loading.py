@@ -31,8 +31,5 @@ def main() -> None:
             print(f"poetry add {module}")
 
 
-
-
-
 if __name__ == "__main__":
     main()
