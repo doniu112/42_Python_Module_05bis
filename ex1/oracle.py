@@ -3,7 +3,7 @@ from dotenv import load_dotenv
 
 
 def main() -> None:
-    loaded = load_dotenv()
+    load_dotenv()
 
     mode = os.getenv("MATRIX_MODE") or "development"
     database = os.getenv("DATABASE_URL")
