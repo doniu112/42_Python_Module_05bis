@@ -13,7 +13,7 @@ def main() -> None:
         print("To seal the laboratory, run:\n"
               "python3 -m venv lab_env\n"
               "source lab_env/bin/activate # On Unix\n"
-              "lab_env\\Scripts\\activate # On Window\n")
+              "lab_env\\Scripts\\activate # On Windows\n")
         print("Then run this program again.")
     else:
         print("LABORATORY STATUS: The laboratory is sealed\n")
@@ -26,7 +26,7 @@ def main() -> None:
         print(
             "Reagent installation path:\n"
             f"{site.getsitepackages()[0]}"
-            )
+        )
 
 
 if __name__ == "__main__":
