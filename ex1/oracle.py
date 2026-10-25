@@ -3,9 +3,9 @@ from dotenv import load_dotenv
 
 
 def main() -> None:
-    load_dotenv()
+    loaded = load_dotenv()
 
-    mode = os.getenv("MATRIX_MODE", "development")
+    mode = os.getenv("MATRIX_MODE") or "development"
     database = os.getenv("DATABASE_URL")
     api_key = os.getenv("API_KEY")
     log_level = os.getenv("LOG_LEVEL", "DEBUG")
