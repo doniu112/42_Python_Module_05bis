@@ -12,12 +12,14 @@ def main() -> None:
             spec = importlib.import_module(module)
             if module == "pandas":
                 print(
-                    f"[OK] {module} ({spec.__version__}) - "
+                    f"[OK] {module} "
+                    f"({getattr(spec, "__version__", "unknown")}) - "
                     "Data manipulation ready."
                 )
             elif module == "numpy":
                 print(
-                    f"[OK] {module} ({spec.__version__}) - "
+                    f"[OK] {module} "
+                    f"({getattr(spec, "__version__", "unknown")}) - "
                     "Numerical computation ready"
                 )
 
