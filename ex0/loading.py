@@ -13,13 +13,13 @@ def main() -> None:
             if module == "pandas":
                 print(
                     f"[OK] {module} "
-                    f"({getattr(spec, "__version__", "unknown")}) - "
+                    f"({getattr(spec, '__version__', 'unknown')}) - "
                     "Data manipulation ready."
                 )
             elif module == "numpy":
                 print(
                     f"[OK] {module} "
-                    f"({getattr(spec, "__version__", "unknown")}) - "
+                    f"({getattr(spec, '__version__', 'unknown')}) - "
                     "Numerical computation ready"
                 )
 
